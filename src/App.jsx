@@ -27,12 +27,13 @@ function App() {
       <div className='w-full block'>
         <Header />
         <main>
-          TODO:  <Outlet />
+          <Outlet />
         </main>
         <Footer />
       </div>
     </div>
-  ) : null
+  ) :
+    <div>Loading...</div>
 }
 
 export default App
