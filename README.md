@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Search app
 
 Search app, created using JavaScript and PostgreSQL.
@@ -37,3 +38,8 @@ npm run dev:server
 ```
 ```
 npm run dev:client
+=======
+# Error in Appwrite service :: createPost 
+
+![Screenshot 2024-01-12 144916](https://github.com/Subrat29/BlogApp/assets/110958990/96a5d6ea-d890-48ea-81b9-81db2023c61e)
+>>>>>>> 3cd16a93bb091be657c513cae802fb9f0e2cf391
