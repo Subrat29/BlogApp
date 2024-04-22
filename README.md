@@ -1,45 +1,49 @@
-<<<<<<< HEAD
-# Search app
+# BlogApp
 
-Search app, created using JavaScript and PostgreSQL.
+BlogApp is a feature-rich web application that empowers users to share their thoughts and insights by publishing articles. Seamlessly integrating user authentication, a robust rich text editor, and Appwrite as the backend, BlogApp ensures a smooth and secure experience for both writers and readers.
 
-## Demo is available here (it was previously deployed on DO an now it's not avalable)
+## Features
 
-[Demo](http://143.198.20.1/)
+- **User Authentication:** Secure signup and login using email.
+- **Article Management:** Create, edit, and delete articles with ease.
+- **Rich Text Editor:** Powered by TinyMCE, the editor offers a plethora of formatting options including font styles, colors, headings, indentations, images, tables, special characters, and numbering.
+- **Browse Articles:** Users can explore a dedicated section to read and engage with articles posted by others.
 
-## Tech Stack
+## Technologies Used
 
-- [Node.js](https://nodejs.org/en/) JavaScript runtime
-- [Express](https://expressjs.com/) web framework for Node.js
-- [Elephantsql](https://elephantsql.com) PostgreSQL as a Service
-- [React](https://reactjs.org/) a JavaScript library for building user interfaces
-- [Styled Components](https://www.styled-components.com/) CSS-in-JS
+- **React (Frontend):** A versatile JavaScript library for building user interfaces.
+- **Tailwind CSS (Styling):** A utility-first CSS framework for efficient and responsive designs.
+- **Appwrite (Backend):** An end-to-end backend server that simplifies backend tasks, providing secure user authentication and data storage.
 
-## Tools Used
+## Dependencies
 
-- [Webpack](https://webpack.js.org/) module bundler
-- [ESLint](http://eslint.org/) linter with [Airbnb's config]
-- [Babel.js](https://babeljs.io/) compiler
+- **"@reduxjs/toolkit": "^2.0.1"**
+- **"@tinymce/tinymce-react": "^4.3.2"**
+- **"appwrite": "^13.0.1"**
+- **"html-react-parser": "^5.1.1"**
+- **"react": "^18.2.0"**
+- **"react-dom": "^18.2.0"**
+- **"react-hook-form": "^7.49.3"**
+- **"react-redux": "^9.1.0"**
+- **"react-router-dom": "^6.21.3"**
 
-In order to start the app you need to create an .env file.
+## Installation
 
-## Create a `.env` file
+1. **Clone the Repository:** `git clone https://github.com/shk-ubd/blog-app.git`
+2. **Navigate to the Project Directory:** `cd blog-app`
+3. **Install Dependencies:** `npm install`
 
-You can find a `.env.example` file in the root directory as a starting point. You can copy the content of this file to `.env` and add your own values.
 
-``` bash
-nano .env
-```
+## Usage
 
-## Start the app in dev mode
+1. **Sign Up and Log In:** Create an account using your email and log in to access the full suite of features.
+2. **Create and Manage Articles:** Navigate to "Add Post" in the navbar to publish a post. Edit or delete your articles as needed.
+3. **Explore All Posts:** Visit the "All Posts" section to discover articles published by other users.
 
-```
-npm run dev:server
-```
-```
-npm run dev:client
-=======
-# Error in Appwrite service :: createPost 
+## Rich Text Editor
 
-![Screenshot 2024-01-12 144916](https://github.com/Subrat29/BlogApp/assets/110958990/96a5d6ea-d890-48ea-81b9-81db2023c61e)
->>>>>>> 3cd16a93bb091be657c513cae802fb9f0e2cf391
+The application leverages TinyMCE, providing an intuitive and powerful rich text editing experience. Users can format text, insert multimedia elements, and craft engaging articles akin to professional word processors.
+
+## Appwrite Integration
+
+Appwrite serves as the backbone, streamlining backend operations and enhancing the security of user authentication and data storage. Appwrite abstracts the complexity and repetitiveness required to build a modern backend API, allowing developers to build secure apps faster.
