@@ -17,7 +17,7 @@ export class Service {
     async createPost({ title, slug, content, featuredimage, status, userId }) {
         try {
             
-            return await this.databases.createDocument(
+            const response = await this.databases.createDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
@@ -29,6 +29,8 @@ export class Service {
                     userId
                 }
             )
+            console.log("appwrite/createPost/response: ", response);
+            return response
         } catch (error) {
             console.log("Appwrite service :: createPost :: error", error);
         }
@@ -96,11 +98,13 @@ export class Service {
 
     async uploadFile(file) {
         try {
-            return await this.bucket.createFile(
+            const response = await this.bucket.createFile(
                 conf.appwriteBucketId,
                 ID.unique(),
                 file
             )
+            console.log("appwrite/uploadImage/response: ", response);
+            return response
         } catch (error) {
             console.log("Appwrite service :: uploadFile :: error", error);
             return false

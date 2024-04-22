@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 function Header() {
     const authStatus = useSelector((state) => state.auth.status)
     const navigate = useNavigate()
+    console.log("Header/authstatus: ", authStatus)
 
     const navItems = [
         {
@@ -28,7 +29,7 @@ function Header() {
         {
             name: 'All Posts',
             slug: "/all-posts",
-            active: !authStatus
+            active: authStatus
         },
         {
             name: 'Add Post',
